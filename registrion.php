@@ -1,4 +1,3 @@
-5.1.1 Code for registration.php
 <?php
  $name=$user=$pass1=$pass2=$email="";
 $conn=@mysqli_connect("localhost","root","root","emandi");
@@ -11,8 +10,7 @@ $pass1=$_POST["pass1"];
 $email=$_POST["email"];
  if($pass1==$pass2)
  {
- $query="insert into register values('".$name."','".$user."' 
-,'".$pass1."','".$pass2."','".$email."')";
+ $query="insert into register values('".$name."','".$user."' ,'".$pass1."','".$pass2."','".$email."')";
  $result=@mysqli_query($conn,$query);
  if($result)
  {
